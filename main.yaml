@@ -5,3 +5,12 @@
     - name: ping the servers
       ping:
     
+    - name: install nginx
+      dnf:
+        name: nginx
+        state: present
+
+    - name: start a service
+      service: 
+         state: started
+         name: nginx
