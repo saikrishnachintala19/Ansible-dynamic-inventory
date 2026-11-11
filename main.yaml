@@ -2,6 +2,7 @@
   #hosts: _roboshop_frontend
   hosts: aws_ec2
   become: yes
+  serial: 2
   tasks:
     - name: ping the servers
       ping:
