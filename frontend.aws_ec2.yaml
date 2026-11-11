@@ -5,4 +5,4 @@ filters:
   instance-state-name: running
   tag:Name: roboshop-frontend
 hostnames:
-  - private_ip_address
+  - private-ip-address
