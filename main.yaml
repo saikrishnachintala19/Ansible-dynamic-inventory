@@ -1,6 +1,7 @@
 - name: To verify the ping command from ansible to aws created servers
   #hosts: _roboshop_frontend
   hosts: aws_ec2
+  become: yes
   tasks:
     - name: ping the servers
       ping:
